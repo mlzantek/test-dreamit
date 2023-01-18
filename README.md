@@ -1,6 +1,6 @@
 # 1. Describa que es un algoritmo
 
-Un algoritmo es un conjunto de reglas y pasos bien definidos y ordenados que se utilizan para resolver un problema o realizar una tarea específica. Es como un plan o una receta que te ayuda a seguir los pasos necesarios para lograr un objetivo. Los algoritmos se utilizan en una variedad de campos, como la informática, la matemática y la ciencia, y pueden ser tan simples como una lista de instrucciones para cocinar una cena o tan complejos como un sistema de inteligencia artificial. En resumen, un algoritmo es una herramienta muy útil para resolver problemas y automatizar tareas.
+Un algoritmo es un conjunto de reglas y pasos bien definidos y ordenados que se utilizan para resolver un problema o realizar una tarea específica. Es como un plan o una receta que te ayuda a seguir los pasos necesarios para lograr un objetivo. Los algoritmos se utilizan en una variedad de campos, como la informática, la matemática y la ciencia, y pueden ser tan simples como una lista de instrucciones para cocinar una comida o tan complejos para conformar un sistema de inteligencia artificial. En resumen, un algoritmo es una herramienta con instrucciones para resolver problemas y automatizar tareas.
 
 #  2. Desarrolle un programa en cualquier lenguaje, que realice la siguiente operación:
 a. Debe recibir dos valores numéricos, ‘inicio’ y ‘fin’. 
@@ -9,6 +9,8 @@ i. Si el número en cuestión es divisible entre 2, debe escribir “pin”.
 ii. Si el número en cuestión es divisible entre 3, debe escribir “tin”. 
 iii. Si el número en cuestión es divisible entre 5, debe escribir “fla”. 
 c. El programa debe escribir sólo una opción por iteración, la mayor opción tiene prioridad.
+
+Se hace una  pequeña funcion en php facil de correr en frio:
 
     <?php  
     function imprimir_numeros($inicio, $fin) {
@@ -67,19 +69,19 @@ c. Indique las áreas de un edificio que posean tickets aprobados con código ma
 ## 4. ¿Cuál es la forma correcta de crear una nueva migración en Laravel?
 La forma correcta de crear una nueva migración en Laravel es mediante el uso del comando "php artisan make:migration" en la línea de comandos. Este comando toma un nombre de argumento que especifica el nombre de la migración y opcionalmente una opción de --create o --table que especifica el nombre de la tabla a crear o modificar.
 
-Por ejemplo, si quieres crear una migración para crear una tabla llamada "users", el comando sería:
+Por ejemplo, si se quiere crear una migración para crear una tabla llamada "users", el comando sería:
 
 `php artisan make:migration create_users_table --create=users` 
 
-O si deseas crear una migración para modificar una tabla existente llamada "users" el comando sería:
+O si se desea crear una migración para modificar una tabla existente llamada "users" el comando sería:
 
 `php artisan make:migration modify_users_table --table=users` 
 
-Una vez que hayas creado una migración, puedes ejecutarla usando el comando "php artisan migrate" para aplicar las modificaciones en la base de datos, y "php artisan migrate:rollback" para deshacer las últimas migraciones aplicadas.
+Una vez se haya creado una migración, se puede ejecutar usando el comando `"php artisan migrate"` para aplicar las modificaciones en la base de datos, y `"php artisan migrate:rollback"` para deshacer las últimas migraciones aplicadas.
 
 ## 5. ¿Cómo puedo crear un nuevo controlador en Laravel?
 
-Puedes crear un nuevo controlador en Laravel mediante el uso del comando "php artisan make:controller" en la línea de comandos. Este comando toma un nombre de argumento que especifica el nombre del controlador y opcionalmente una opción --resource que indica que se debe crear un controlador de recursos.
+Se puede crear un nuevo controlador en Laravel mediante el uso del comando `"php artisan make:controller"` en la línea de comandos. Este comando toma un nombre de argumento que especifica el nombre del controlador y opcionalmente una opción `--resource` que indica que se debe crear un controlador de recursos.
 
 Por ejemplo, si quieres crear un controlador llamado "UserController" el comando sería:
 
@@ -89,17 +91,17 @@ Si deseas crear un controlador de recurso llamado "UserController" el comando se
 
 `php artisan make:controller UserController --resource` 
 
-Una vez que hayas creado el controlador, puedes agregar métodos para manejar las acciones de tu aplicación, como por ejemplo una función "index" para manejar la acción de ver una lista de usuarios, o una función "store" para manejar la acción de crear un nuevo usuario.
+Una vez se haya creado el controlador, se puede agregar métodos para manejar las acciones de la aplicación, como por ejemplo una función "index" para manejar la acción de ver una lista de usuarios, o una función "store" para manejar la acción de crear un nuevo usuario.
 
-Es recomendable que también agregues las rutas correspondientes en el archivo web.php o api.php para poder acceder a las acciones del controlador desde la url.
+Es recomendable que también se agregue las rutas correspondientes en el archivo web.php o api.php para poder acceder a las acciones del controlador desde la url.
 
 ## 6. ¿Cuál es la diferencia entre una ruta de tipo GET y una ruta de tipo POST en Laravel?
 
-En Laravel, las rutas de tipo GET y POST son dos tipos diferentes de rutas que se utilizan para manejar peticiones HTTP diferentes.
+En Laravel, las rutas de tipo GET y POST son dos tipos de rutas que se utilizan para manejar peticiones HTTP diferentes.
 
-Una ruta de tipo GET se utiliza para recuperar información del servidor. Por ejemplo, una ruta de tipo GET podría ser utilizada para cargar una página de inicio o para recuperar una lista de elementos de una base de datos. Por defecto, todas las peticiones que haga el navegador a través de un enlace o escribiendo la url en el navegador son de tipo GET.
+Una ruta de tipo GET se utiliza para recuperar información del servidor. Por ejemplo, podría ser utilizada para cargar una página de inicio o para recuperar una lista de elementos de una base de datos. Por defecto, todas las peticiones que haga el navegador a través de un enlace o escribiendo la url en el navegador son de tipo GET.
 
-Por otro lado, una ruta de tipo POST se utiliza para enviar información al servidor. Por ejemplo, una ruta de tipo POST podría ser utilizada para enviar un formulario de registro de un usuario o para crear un nuevo elemento en una base de datos. Las peticiones de tipo POST son enviadas al servidor a través de un formulario HTML.
+Por otro lado, una ruta de tipo POST se utiliza para enviar información al servidor. Por ejemplo, podría ser utilizada para enviar un formulario de registro de un usuario o para crear un nuevo elemento en una base de datos.
 
 En resumen, una ruta de tipo GET se utiliza para recuperar información, mientras que una ruta de tipo POST se utiliza para enviar información al servidor. Es importante asegurarse de utilizar el método correcto en las rutas correspondientes para evitar problemas de seguridad y garantizar un correcto funcionamiento de la aplicación.
 
@@ -127,11 +129,11 @@ Un ejemplo de cómo validar una solicitud en un controlador podría ser el sigui
         }
     }
 
-En este ejemplo, estamos usando el método validate() del objeto Request para validar los datos de la solicitud. Estamos especificando las reglas de validación para cada campo en un arreglo asociativo. El nombre del campo es la clave del arreglo y las reglas de validación son los valores. La función create() de Eloquent ORM se encarga de crear un nuevo usuario con los datos validados.
+En este ejemplo, se usa el método validate() del objeto Request para validar los datos de la solicitud. Especificando las reglas de validación para cada campo en un arreglo asociativo. El nombre del campo es la clave del arreglo y las reglas de validación son los valores. La función create() de Eloquent ORM se encarga de crear un nuevo usuario con los datos validados.
 
-El framework cuenta con muchas reglas de validación predefinidas como 'required', 'string', 'email', 'unique', 'min', 'max' entre otras, y también te permite crear tus propias reglas de validación personalizadas.
+El framework cuenta con muchas reglas de validación predefinidas como 'required', 'string', 'email', 'unique', 'min', 'max' entre otras, y también permite crear tus propias reglas de validación personalizadas.
 
-Es importante también mencionar que puedes personalizar los mensajes de error en caso de no cumplir las reglas establecidas, para ello debes crear un archivo en la carpeta resources/lang/es (o el idioma que uses) con el nombre validation.php y agregar los mensajes correspondientes.
+Es importante también mencionar que se pueden personalizar los mensajes de error en caso de no cumplir las reglas establecidas, para ello se debe crear un archivo en la carpeta resources/lang/es (o el idioma que uses) con el nombre validation.php y agregar los mensajes correspondientes.
 
 ## 8. ¿Cómo puedo hacer una consulta en una base de datos en Laravel? ¿Puedes proporcionar un ejemplo de una consulta de selección?
 
@@ -147,9 +149,9 @@ Un ejemplo de una consulta de selección utilizando Eloquent ORM podría ser el 
             return view('users.index', compact('users'));
         }
     }
-En este ejemplo, estamos usando el modelo User, y su método estático where() para recuperar todos los usuarios con el campo "active" en true, y luego obtenemos todos los resultados con el método get().
+En este ejemplo, se usa el modelo User, y su método estático where() para recuperar todos los usuarios con el campo "active" en true, y luego obtenemos todos los resultados con el método get().
 
-También puedes usar query builder para hacer consultas a la base de datos:
+También se puede usar query builder para hacer consultas a la base de datos:
 
     use DB;
     
@@ -160,11 +162,12 @@ También puedes usar query builder para hacer consultas a la base de datos:
         }
     }
 
-En este ejemplo, estamos utilizando el facade DB y su método table() para seleccionar la tabla 'users' y luego usamos el método where() para filtrar los resultados por el campo 'active' y el método get() para obtener los resultados.
+En este ejemplo, se utiliza el facade DB y su método table() para seleccionar la tabla 'users' y luego el método where() para filtrar los resultados por el campo 'active' y el método get() para obtener los resultados.
 
 Es importante mencionar que Eloquent ORM proporciona una interfaz de objeto-relacional para trabajar con la base de datos, mientras que Query Builder proporciona una interfaz basada en consultas para trabajar con la base de datos.
 
 ## 9. ¿Cómo manejas la autenticación en Laravel? ¿Qué es el Middleware de autenticación?
+
 Laravel maneja la autenticación mediante el uso de middleware de autenticación. El middleware de autenticación es un componente de software que se encarga de comprobar la autenticidad de un usuario antes de permitirle acceder a un recurso protegido. En Laravel, los middleware de autenticación se registran en el archivo de rutas y se asignan a las rutas que requieren autenticación. Cuando un usuario intenta acceder a una ruta protegida, el middleware de autenticación verifica si el usuario está autenticado antes de permitirle acceder al recurso. Si el usuario no está autenticado, se le redirige a la página de inicio de sesión.
 
 El framework Laravel proporciona varios middleware de autenticación, como el middleware de autenticación de sesión, que se basa en la sesión para mantener el estado de autenticación del usuario. También proporciona middleware de autenticación basados en token, como el middleware de autenticación de token de portador, que se utiliza para la autenticación de API.
@@ -184,9 +187,7 @@ o
 Para acceder a un valor de sesión, puedes utilizar el método `get` de la clase `Session` o el helper `session()` y especificar la clave:
 
 `$value = Session::get('key');` 
-
 o
-
 `$value = session('key');` 
 
 Laravel ofrece varios tipos de sesiones disponibles para su uso, incluyendo:
@@ -197,15 +198,15 @@ Laravel ofrece varios tipos de sesiones disponibles para su uso, incluyendo:
 -   Sesiones de almacenamiento en cache: estas sesiones almacenan los datos de sesión en un cache y son adecuadas para aplicaciones de alta disponibilidad o escalabilidad.
 -   Sesiones de almacenamiento en redis: estas sesiones almacenan los datos de sesión en redis y son adecuadas para aplicaciones de alta disponibilidad y escalabilidad.
 
-Por defecto Laravel utiliza sesiones de almacenamiento en disco, pero puedes cambiar a cualquiera de los mencionados anteriormente configurando el archivo `config/session.php`
+Por defecto Laravel utiliza sesiones de almacenamiento en disco, pero se puede cambiar a cualquiera de los mencionados anteriormente configurando el archivo `config/session.php`
 
 ## 11. ¿Cómo puedo enviar un correo electrónico en Laravel? ¿Puedes proporcionar un ejemplo de cómo enviar un correo electrónico usando la función de correo incorporada de Laravel?
 
-Puedes enviar un correo electrónico en Laravel utilizando la clase `Mail` o el facade `Mail`.
+Se puede enviar un correo electrónico en Laravel utilizando la clase `Mail` o el facade `Mail`.
 
 Para enviar un correo electrónico, debes especificar el destinatario, el remitente, el asunto y el cuerpo del correo. Puedes utilizar una plantilla para el cuerpo del correo o especificar el cuerpo como una cadena.
 
-A continuación te muestro un ejemplo de cómo enviar un correo electrónico utilizando una plantilla de vista:
+Un ejemplo de cómo enviar un correo electrónico utilizando una plantilla de vista puede ser:
 
     use Illuminate\Support\Facades\Mail;
     
@@ -217,6 +218,6 @@ A continuación te muestro un ejemplo de cómo enviar un correo electrónico uti
 
 En este ejemplo, el método `send` está siendo utilizado para enviar un correo electrónico utilizando la plantilla de vista 'emails.welcome' y los datos especificados en $data. El método `from` está siendo utilizado para especificar el remitente del correo electrónico, el método `to` está siendo utilizado para especificar el destinatario del correo electrónico y el método `subject` está siendo utilizado para especificar el asunto del correo electrónico.
 
-Además, Laravel te permite usar distintos servicios de correo electrónico, como mailtrap, gmail, mailgun, entre otros. Puedes configurar esto en el archivo `.env` y en el archivo de configuración `config/mail.php`.
+Además, Laravel permite usar distintos servicios de correo electrónico, como mailtrap, gmail, mailgun, entre otros. Se puede configurar esto en el archivo `.env` y en el archivo de configuración `config/mail.php`.
 
-Es importante mencionar que para enviar correos electrónicos en Laravel, es necesario configurar un servicio de correo electrónico en tu aplicación, como una cuenta de Gmail o un servicio de correo electrónico externo como Mailgun o Sendgrid.
+Es importante mencionar que para enviar correos electrónicos en Laravel, es necesario configurar un servicio de correo electrónico en la aplicación, como una cuenta de Gmail o un servicio de correo electrónico externo como Mailgun o Sendgrid.
