@@ -1,8 +1,8 @@
 # Test para DreamIT
-Nombre: Marco Laso
-Rut: 26259279-0
-Fecha: 18-01-2023
 
+ - Nombre: Marco Laso 
+ - Rut: 26259279-0 
+ - Fecha: 18-01-2023
 
 ## 1. Describa que es un algoritmo
 
