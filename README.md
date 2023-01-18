@@ -175,25 +175,17 @@ En Laravel, puedes crear una sesión utilizando la clase `Session` o el helper `
 
 Para crear una nueva sesión, puedes utilizar el método `put` de la clase `Session` o el helper `session()` y especificar la clave y el valor de la sesión:
 
-Copy code
-
 `Session::put('key', 'value');` 
 
 o
-
-Copy code
 
 `session(['key' => 'value']);` 
 
 Para acceder a un valor de sesión, puedes utilizar el método `get` de la clase `Session` o el helper `session()` y especificar la clave:
 
-Copy code
-
 `$value = Session::get('key');` 
 
 o
-
-Copy code
 
 `$value = session('key');` 
 
