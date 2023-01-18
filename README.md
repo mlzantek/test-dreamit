@@ -1,8 +1,14 @@
-# 1. Describa que es un algoritmo
+# Test para DreamIT
+Nombre: Marco Laso
+Rut: 26259279-0
+Fecha: 18-01-2023
+
+
+## 1. Describa que es un algoritmo
 
 Un algoritmo es un conjunto de reglas y pasos bien definidos y ordenados que se utilizan para resolver un problema o realizar una tarea específica. Es como un plan o una receta que te ayuda a seguir los pasos necesarios para lograr un objetivo. Los algoritmos se utilizan en una variedad de campos, como la informática, la matemática y la ciencia, y pueden ser tan simples como una lista de instrucciones para cocinar una comida o tan complejos para conformar un sistema de inteligencia artificial. En resumen, un algoritmo es una herramienta con instrucciones para resolver problemas y automatizar tareas.
 
-#  2. Desarrolle un programa en cualquier lenguaje, que realice la siguiente operación:
+##  2. Desarrolle un programa en cualquier lenguaje, que realice la siguiente operación:
 a. Debe recibir dos valores numéricos, ‘inicio’ y ‘fin’. 
 b. Debe recorrer todos los números desde ‘inicio’ a ‘fin’, siguiendo las reglas a continuación: 
 i. Si el número en cuestión es divisible entre 2, debe escribir “pin”. 
